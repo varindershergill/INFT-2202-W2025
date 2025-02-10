@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Website</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html">Varinder Shergill</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Website!</h1>
+            <p class="lead">Student at Durham College</p>
+        </div>
+    </header>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 bg-light p-4 rounded shadow-sm">
+                <h3>Left Section</h3>
+                <p>Somthing here</p>
+            </div>
+            <div class="col-md-6 text-center p-4">
+                <h2>Main Content</h2>
+                <p>Main content area</p>
+                <img src="assets/main.jpg" class="img-fluid rounded shadow" alt="Main Image">
+            </div>
+            <div class="col-md-3 bg-light p-4 rounded shadow-sm">
+                <h3>Right Section</h3>
+                <p>Somthing else</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <span>&copy; <span id="currentYear"></span>My Website</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerText = new Date().getFullYear();
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
