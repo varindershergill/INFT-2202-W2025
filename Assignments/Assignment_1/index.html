@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Professional Website</title>
-    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container d-flex justify-content-center">
             <a class="navbar-brand" href="index.html">Varinder Shergill</a>
@@ -27,39 +28,35 @@
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
+    <!-- Header Section -->
+    <header class="text-white text-center py-5" style="background: url('https://durhamcollege.ca/wp-content/uploads/049-e1585855427865.jpg') center/cover no-repeat; position: relative;">
         <div class="container">
             <h1 class="display-4">Welcome to My Website!</h1>
             <p class="lead">Student at Durham College</p>
         </div>
     </header>
 
+    <!-- Main Content Section -->
     <section class="container mt-5">
         <div class="row">
-            <div class="col-md-3 bg-light p-4 rounded shadow-sm">
-                <h3>Left Section</h3>
-                <p>Somthing here</p>
-            </div>
-            <div class="col-md-6 text-center p-4">
-                <h2>Main Content</h2>
-                <p>Main content area</p>
-                <img src="assets/main.jpg" class="img-fluid rounded shadow" alt="Main Image">
-            </div>
-            <div class="col-md-3 bg-light p-4 rounded shadow-sm">
-                <h3>Right Section</h3>
-                <p>Somthing else</p>
-            </div>
+            <div class="col-md-3 bg-light p-4 rounded shadow-sm" id="left-section"></div>
+            <div class="col-md-6 text-center p-4" id="main-content"></div>
+            <div class="col-md-3 bg-light p-4 rounded shadow-sm" id="right-section"></div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3 mt-5 fixed-bottom">
         <div class="container">
-            <span>&copy; <span id="currentYear"></span>My Website</span>
+            <span>&copy; <span id="currentYear"></span> My Website</span>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        document.getElementById("currentYear").innerText = new Date().getFullYear();
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("currentYear").innerText = new Date().getFullYear();
+        });
     </script>
     <script src="scripts/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -7,3 +7,15 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+
+
+.header-text {
+    color: white; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    display: inline-block; 
+    border-radius: 5px; 
+}
+
